@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D954FB5251E00E6007AFD2A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D954FB4251E00E6007AFD2A /* WidgetKit.framework */; platformFilter = ios; };
+		6D954FB7251E00E6007AFD2A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D954FB6251E00E6007AFD2A /* SwiftUI.framework */; };
+		6D954FBA251E00E6007AFD2A /* GrahamWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D954FB9251E00E6007AFD2A /* GrahamWidget.swift */; };
+		6D954FBC251E00E8007AFD2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D954FBB251E00E8007AFD2A /* Assets.xcassets */; };
+		6D954FC0251E00E8007AFD2A /* GrahamWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6D954FB2251E00E6007AFD2A /* GrahamWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6DC3ADCF2503A5630066F055 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC3ADCE2503A5630066F055 /* WeatherManager.swift */; };
+		6DC3ADD12503A5DE0066F055 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC3ADD02503A5DE0066F055 /* WeatherData.swift */; };
+		6DC3ADD32503A7920066F055 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC3ADD22503A7920066F055 /* WeatherModel.swift */; };
+		6DFB901325029129007351BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFB901225029129007351BB /* AppDelegate.swift */; };
+		6DFB901525029129007351BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFB901425029129007351BB /* SceneDelegate.swift */; };
+		6DFB901725029129007351BB /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFB901625029129007351BB /* WeatherViewController.swift */; };
+		6DFB901A25029129007351BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DFB901825029129007351BB /* Main.storyboard */; };
+		6DFB901C2502912D007351BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DFB901B2502912D007351BB /* Assets.xcassets */; };
+		6DFB901F2502912D007351BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DFB901D2502912D007351BB /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6D954FBE251E00E8007AFD2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DFB900725029129007351BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D954FB1251E00E6007AFD2A;
+			remoteInfo = GrahamWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6D954FC1251E00E8007AFD2A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6D954FC0251E00E8007AFD2A /* GrahamWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6D8A2B90252B9A370028AF3E /* GrahamApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GrahamApp.entitlements; sourceTree = "<group>"; };
+		6D8A2B91252B9A380028AF3E /* GrahamWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GrahamWidgetExtension.entitlements; sourceTree = "<group>"; };
+		6D954FB2251E00E6007AFD2A /* GrahamWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GrahamWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D954FB4251E00E6007AFD2A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		6D954FB6251E00E6007AFD2A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		6D954FB9251E00E6007AFD2A /* GrahamWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrahamWidget.swift; sourceTree = "<group>"; };
+		6D954FBB251E00E8007AFD2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D954FBD251E00E8007AFD2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DC3ADCE2503A5630066F055 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		6DC3ADD02503A5DE0066F055 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		6DC3ADD22503A7920066F055 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		6DFB900F25029129007351BB /* GrahamApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrahamApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DFB901225029129007351BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6DFB901425029129007351BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6DFB901625029129007351BB /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		6DFB901925029129007351BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6DFB901B2502912D007351BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DFB901E2502912D007351BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6DFB90202502912D007351BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D954FAF251E00E6007AFD2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D954FB7251E00E6007AFD2A /* SwiftUI.framework in Frameworks */,
+				6D954FB5251E00E6007AFD2A /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DFB900C25029129007351BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D954FB3251E00E6007AFD2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D954FB4251E00E6007AFD2A /* WidgetKit.framework */,
+				6D954FB6251E00E6007AFD2A /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6D954FB8251E00E6007AFD2A /* GrahamWidget */ = {
+			isa = PBXGroup;
+			children = (
+				6D954FB9251E00E6007AFD2A /* GrahamWidget.swift */,
+				6D954FBB251E00E8007AFD2A /* Assets.xcassets */,
+				6D954FBD251E00E8007AFD2A /* Info.plist */,
+			);
+			path = GrahamWidget;
+			sourceTree = "<group>";
+		};
+		6DC3ADCB2502F0630066F055 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6DC3ADCE2503A5630066F055 /* WeatherManager.swift */,
+				6DC3ADD02503A5DE0066F055 /* WeatherData.swift */,
+				6DC3ADD22503A7920066F055 /* WeatherModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6DC3ADCC2502F06C0066F055 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6DFB901825029129007351BB /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6DC3ADCD2502F0720066F055 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6DFB901625029129007351BB /* WeatherViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6DFB900625029129007351BB = {
+			isa = PBXGroup;
+			children = (
+				6D8A2B91252B9A380028AF3E /* GrahamWidgetExtension.entitlements */,
+				6DFB901125029129007351BB /* GrahamApp */,
+				6D954FB8251E00E6007AFD2A /* GrahamWidget */,
+				6D954FB3251E00E6007AFD2A /* Frameworks */,
+				6DFB901025029129007351BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6DFB901025029129007351BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DFB900F25029129007351BB /* GrahamApp.app */,
+				6D954FB2251E00E6007AFD2A /* GrahamWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DFB901125029129007351BB /* GrahamApp */ = {
+			isa = PBXGroup;
+			children = (
+				6D8A2B90252B9A370028AF3E /* GrahamApp.entitlements */,
+				6DC3ADCB2502F0630066F055 /* Model */,
+				6DC3ADCC2502F06C0066F055 /* View */,
+				6DC3ADCD2502F0720066F055 /* Controller */,
+				6DFB901225029129007351BB /* AppDelegate.swift */,
+				6DFB901425029129007351BB /* SceneDelegate.swift */,
+				6DFB901B2502912D007351BB /* Assets.xcassets */,
+				6DFB901D2502912D007351BB /* LaunchScreen.storyboard */,
+				6DFB90202502912D007351BB /* Info.plist */,
+			);
+			path = GrahamApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D954FB1251E00E6007AFD2A /* GrahamWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D954FC4251E00E8007AFD2A /* Build configuration list for PBXNativeTarget "GrahamWidgetExtension" */;
+			buildPhases = (
+				6D954FAE251E00E6007AFD2A /* Sources */,
+				6D954FAF251E00E6007AFD2A /* Frameworks */,
+				6D954FB0251E00E6007AFD2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrahamWidgetExtension;
+			productName = GrahamWidgetExtension;
+			productReference = 6D954FB2251E00E6007AFD2A /* GrahamWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		6DFB900E25029129007351BB /* GrahamApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DFB90232502912D007351BB /* Build configuration list for PBXNativeTarget "GrahamApp" */;
+			buildPhases = (
+				6DFB900B25029129007351BB /* Sources */,
+				6DFB900C25029129007351BB /* Frameworks */,
+				6DFB900D25029129007351BB /* Resources */,
+				6D954FC1251E00E8007AFD2A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D954FBF251E00E8007AFD2A /* PBXTargetDependency */,
+			);
+			name = GrahamApp;
+			productName = GrahamApp;
+			productReference = 6DFB900F25029129007351BB /* GrahamApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DFB900725029129007351BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = "Anna Brdak";
+				TargetAttributes = {
+					6D954FB1251E00E6007AFD2A = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					6DFB900E25029129007351BB = {
+						CreatedOnToolsVersion = 11.7;
+					};
+				};
+			};
+			buildConfigurationList = 6DFB900A25029129007351BB /* Build configuration list for PBXProject "GrahamApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DFB900625029129007351BB;
+			productRefGroup = 6DFB901025029129007351BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DFB900E25029129007351BB /* GrahamApp */,
+				6D954FB1251E00E6007AFD2A /* GrahamWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D954FB0251E00E6007AFD2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D954FBC251E00E8007AFD2A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DFB900D25029129007351BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DFB901F2502912D007351BB /* LaunchScreen.storyboard in Resources */,
+				6DFB901C2502912D007351BB /* Assets.xcassets in Resources */,
+				6DFB901A25029129007351BB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D954FAE251E00E6007AFD2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D954FBA251E00E6007AFD2A /* GrahamWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DFB900B25029129007351BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DFB901725029129007351BB /* WeatherViewController.swift in Sources */,
+				6DC3ADD12503A5DE0066F055 /* WeatherData.swift in Sources */,
+				6DFB901325029129007351BB /* AppDelegate.swift in Sources */,
+				6DC3ADCF2503A5630066F055 /* WeatherManager.swift in Sources */,
+				6DC3ADD32503A7920066F055 /* WeatherModel.swift in Sources */,
+				6DFB901525029129007351BB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D954FBF251E00E8007AFD2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D954FB1251E00E6007AFD2A /* GrahamWidgetExtension */;
+			targetProxy = 6D954FBE251E00E8007AFD2A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6DFB901825029129007351BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DFB901925029129007351BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6DFB901D2502912D007351BB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DFB901E2502912D007351BB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6D954FC2251E00E8007AFD2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = GrahamWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U8GM94V49P;
+				INFOPLIST_FILE = GrahamWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.annabrdak.GrahamApp.GrahamWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D954FC3251E00E8007AFD2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = GrahamWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U8GM94V49P;
+				INFOPLIST_FILE = GrahamWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.annabrdak.GrahamApp.GrahamWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6DFB90212502912D007351BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6DFB90222502912D007351BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DFB90242502912D007351BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GrahamApp/GrahamApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U8GM94V49P;
+				INFOPLIST_FILE = GrahamApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.annabrdak.GrahamApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6DFB90252502912D007351BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GrahamApp/GrahamApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U8GM94V49P;
+				INFOPLIST_FILE = GrahamApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.annabrdak.GrahamApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D954FC4251E00E8007AFD2A /* Build configuration list for PBXNativeTarget "GrahamWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D954FC2251E00E8007AFD2A /* Debug */,
+				6D954FC3251E00E8007AFD2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DFB900A25029129007351BB /* Build configuration list for PBXProject "GrahamApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DFB90212502912D007351BB /* Debug */,
+				6DFB90222502912D007351BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DFB90232502912D007351BB /* Build configuration list for PBXNativeTarget "GrahamApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DFB90242502912D007351BB /* Debug */,
+				6DFB90252502912D007351BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DFB900725029129007351BB /* Project object */;
+}
