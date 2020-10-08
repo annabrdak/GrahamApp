@@ -45,7 +45,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         if currentViewController is WeatherViewController{
             let weatherViewController = currentViewController as! WeatherViewController
-            weatherViewController.weatherManager.fetchWeather()
+            weatherViewController.loadData()
         }
         
     }

@@ -10,7 +10,7 @@ import UIKit
 
 class WeatherViewController: UIViewController {
     
-    var weatherManager = WeatherManager()
+    var weatherManager = WeatherManager.shared
     
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var humidityLabel: UILabel!
@@ -22,13 +22,15 @@ class WeatherViewController: UIViewController {
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
-    
     override func viewDidLoad() {
         weatherManager.delegate = self
-        weatherManager.fetchWeather()
+        loadData()
         super.viewDidLoad()
         activityIndicator.startAnimating()
-        
+    }
+    
+    func loadData() {
+        weatherManager.getWeather { _ in }
     }
 }
 
