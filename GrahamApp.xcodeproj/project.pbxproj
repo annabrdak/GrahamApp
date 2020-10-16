@@ -16,6 +16,10 @@
 		6DC3ADD12503A5DE0066F055 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC3ADD02503A5DE0066F055 /* WeatherData.swift */; };
 		6DC3ADD32503A7920066F055 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC3ADD22503A7920066F055 /* WeatherModel.swift */; };
 		6DD4826C252F827E00792BE8 /* GrahamWidgetMedium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD4826B252F827E00792BE8 /* GrahamWidgetMedium.swift */; };
+		6DE00D552533999200DF16DF /* GrahamWidgetLarge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE00D542533999200DF16DF /* GrahamWidgetLarge.swift */; };
+		6DE00D5A25339BE500DF16DF /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE00D5925339BE500DF16DF /* Commons.swift */; };
+		6DE00D5F2533A7BD00DF16DF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5909F925324E1A00E0FA43 /* Constants.swift */; };
+		6DE00D642533A91E00DF16DF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5909F925324E1A00E0FA43 /* Constants.swift */; };
 		6DF0B8C8252E442B00960167 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC3ADD22503A7920066F055 /* WeatherModel.swift */; };
 		6DF0B8C9252E442B00960167 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC3ADD02503A5DE0066F055 /* WeatherData.swift */; };
 		6DF0B8CA252E442B00960167 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC3ADCE2503A5630066F055 /* WeatherManager.swift */; };
@@ -56,6 +60,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6D5909F925324E1A00E0FA43 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6D954FB2251E00E6007AFD2A /* GrahamWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GrahamWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D954FB4251E00E6007AFD2A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		6D954FB6251E00E6007AFD2A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -68,6 +73,8 @@
 		6DC3ADD02503A5DE0066F055 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		6DC3ADD22503A7920066F055 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		6DD4826B252F827E00792BE8 /* GrahamWidgetMedium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrahamWidgetMedium.swift; sourceTree = "<group>"; };
+		6DE00D542533999200DF16DF /* GrahamWidgetLarge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrahamWidgetLarge.swift; sourceTree = "<group>"; };
+		6DE00D5925339BE500DF16DF /* Commons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commons.swift; sourceTree = "<group>"; };
 		6DF0B8CD252E446200960167 /* WeatherEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEntry.swift; sourceTree = "<group>"; };
 		6DF0B8D1252E474D00960167 /* WeatherTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTimelineProvider.swift; sourceTree = "<group>"; };
 		6DF0B8D9252E541A00960167 /* GrahamWidgetSmall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrahamWidgetSmall.swift; sourceTree = "<group>"; };
@@ -150,11 +157,21 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		6DE00D5825339B8400DF16DF /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				6DE00D5925339BE500DF16DF /* Commons.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
 		6DF0B8D8252E53E000960167 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6DE00D5825339B8400DF16DF /* Commons */,
 				6DF0B8D9252E541A00960167 /* GrahamWidgetSmall.swift */,
 				6DD4826B252F827E00792BE8 /* GrahamWidgetMedium.swift */,
+				6DE00D542533999200DF16DF /* GrahamWidgetLarge.swift */,
 				6DF0B8DF252E595000960167 /* GrahamWidgetEntryView.swift */,
 			);
 			path = Views;
@@ -183,6 +200,7 @@
 		6DFB901125029129007351BB /* GrahamApp */ = {
 			isa = PBXGroup;
 			children = (
+				6D5909F925324E1A00E0FA43 /* Constants.swift */,
 				6DC3ADCB2502F0630066F055 /* Model */,
 				6DC3ADCC2502F06C0066F055 /* View */,
 				6DC3ADCD2502F0720066F055 /* Controller */,
@@ -298,15 +316,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DE00D552533999200DF16DF /* GrahamWidgetLarge.swift in Sources */,
 				6DD4826C252F827E00792BE8 /* GrahamWidgetMedium.swift in Sources */,
 				6DF0B8C8252E442B00960167 /* WeatherModel.swift in Sources */,
 				6DF0B8C9252E442B00960167 /* WeatherData.swift in Sources */,
+				6DE00D5A25339BE500DF16DF /* Commons.swift in Sources */,
 				6DF0B8D2252E474D00960167 /* WeatherTimelineProvider.swift in Sources */,
 				6DF0B8CA252E442B00960167 /* WeatherManager.swift in Sources */,
 				6D954FBA251E00E6007AFD2A /* GrahamWidget.swift in Sources */,
 				6DF0B8DA252E541A00960167 /* GrahamWidgetSmall.swift in Sources */,
 				6DF0B8CE252E446200960167 /* WeatherEntry.swift in Sources */,
 				6DF0B8E0252E595000960167 /* GrahamWidgetEntryView.swift in Sources */,
+				6DE00D642533A91E00DF16DF /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +339,7 @@
 				6DC3ADD12503A5DE0066F055 /* WeatherData.swift in Sources */,
 				6DFB901325029129007351BB /* AppDelegate.swift in Sources */,
 				6DC3ADCF2503A5630066F055 /* WeatherManager.swift in Sources */,
+				6DE00D5F2533A7BD00DF16DF /* Constants.swift in Sources */,
 				6DC3ADD32503A7920066F055 /* WeatherModel.swift in Sources */,
 				6DFB901525029129007351BB /* SceneDelegate.swift in Sources */,
 			);
@@ -369,7 +391,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.annabrdak.GrahamApp.GrahamWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.annbrdak.GrahamApp.GrahamWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -535,7 +557,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.annabrdak.GrahamApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.annbrdak.GrahamApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;

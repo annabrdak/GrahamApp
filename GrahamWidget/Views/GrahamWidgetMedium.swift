@@ -16,23 +16,45 @@ struct GrahamWidgetMedium: View {
     var body: some View {
         ZStack {
             Image("backgroundMedium").resizable()
-            VStack(alignment: .leading, spacing: 2.0) {
-                HStack(alignment: .top, spacing: 0.0) {
-                    Text("\(entry.weatherData.temperatureToDisplay)")
-                        .font(.largeTitle)
-                        .foregroundColor(Color(red: 1.00, green: 0.93, blue: 0.81))
-                        .fontWeight(.semibold)
-                    Text("°C")
-                        .font(.largeTitle)
-                        .fontWeight(.thin)
-                        .foregroundColor(Color(red: 1.00, green: 0.93, blue:0.81))
-                }
+            
+            //MARK: - Temperature stack
+            HStack {
+                VStack(alignment: .leading, spacing: 2.0) {
+                    TemperatureView(temp: entry.weatherData.temperatureToDisplay)
+                    
+                    //MARK: - Humidity stack
+                    HStack {
+                        LabelView(text: "Humidity:")
+                        EntryView(entry: entry.weatherData.humidityToDisplay)
+                    }
+                    //MARK: - Pressure stack
+                    HStack {
+                        LabelView(text: "Pressure:")
+                        EntryView(entry: entry.weatherData.pressureToDisplay)
+                    }
+                    //MARK: - Voltage stack
+                    HStack {
+                        LabelView(text: "Voltage:")
+                        EntryView(entry: entry.weatherData.voltageToDisplay)
+                    }
+                    //MARK: - Air quality stack
+                    HStack {
+                        LabelView(text: "PM2.5:")
+                        EntryView(entry: entry.weatherData.pm2_5)
+                    }
+                    HStack {
+                        LabelView(text: "PM10:")
+                        EntryView(entry: entry.weatherData.pm10)
+                    }
+                }.padding([.top, .leading, .bottom])
                 
-                Text("💧 \(entry.weatherData.humidityToDisplay)")
-                    .font(.subheadline).fontWeight(.thin).foregroundColor(Color(red: 1.00, green: 0.93, blue: 0.81))
-                Text("💨 \(entry.weatherData.pressureToDisplay)") .font(.subheadline).fontWeight(.thin).foregroundColor(Color(red: 1.00, green: 0.93, blue: 0.81))
-                Text("⚡️ \(entry.weatherData.voltageToDisplay)").font(.subheadline).fontWeight(.thin).foregroundColor(Color(red: 1.00, green: 0.93, blue: 0.81))
-            }.padding(.bottom)
+                //MARK: - Message stack
+                VStack(alignment: .trailing) {
+                    MessageView(message: entry.weatherData.message)
+                    Spacer()
+                }.padding()
+                
+            }
         }
     }
 }
@@ -42,3 +64,6 @@ struct GrahamWidgetMedium_Previews: PreviewProvider {
         GrahamWidgetMedium(entry: WeatherEntry.stub).previewContext(WidgetPreviewContext(family: .systemMedium))
     }
 }
+
+
+

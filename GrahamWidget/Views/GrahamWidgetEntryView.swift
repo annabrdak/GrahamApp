@@ -15,7 +15,6 @@ struct GrahamWidgetEntryView: View {
     @Environment(\.widgetFamily) var family
     
     var body: some View {
-        //GrahamWidgetSmall(entry: entry)
         switch family {
         case .systemSmall:
             GrahamWidgetSmall(entry: entry)

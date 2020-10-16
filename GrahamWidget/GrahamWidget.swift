@@ -20,6 +20,7 @@ struct GrahamWidget: Widget {
         }
         .configurationDisplayName("Graham widget")
         .description("This widget only displays the voltage because why the fuck not.")
+        .supportedFamilies([.systemSmall, .systemMedium])
     }
 }
 

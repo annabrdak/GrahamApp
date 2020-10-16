@@ -20,7 +20,6 @@ struct WeatherTimelineProvider: TimelineProvider {
     
     func getSnapshot(in context: Context, completion: @escaping (WeatherEntry) -> Void) {
         if context.isPreview {
-            print("is preview")
             completion(WeatherEntry.placeholder)
             
         } else {
@@ -40,11 +39,9 @@ struct WeatherTimelineProvider: TimelineProvider {
             switch result {
             case .success(let entry):
                 let timeline = Timeline(entries: [entry], policy: .after(Date().addingTimeInterval(60 * 10)))
-                print("live entry loaded")
                 completion(timeline)
             case .failure(_):
                 let timeline = Timeline(entries: [WeatherEntry.placeholder], policy: .after(Date().addingTimeInterval(60 * 2)))
-                print("placeholder on timeline")
                 completion(timeline)
             }
         }

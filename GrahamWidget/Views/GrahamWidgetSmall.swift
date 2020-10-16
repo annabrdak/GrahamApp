@@ -17,21 +17,10 @@ struct GrahamWidgetSmall: View {
         ZStack {
             Image("backgroundSmall").resizable()
             VStack(alignment: .leading, spacing: 2.0) {
-                HStack(alignment: .top, spacing: 0.0) {
-                    Text("\(entry.weatherData.temperatureToDisplay)")
-                        .font(.largeTitle)
-                        .foregroundColor(Color(red: 1.00, green: 0.93, blue: 0.81))
-                        .fontWeight(.semibold)
-                    Text("°C")
-                        .font(.largeTitle)
-                        .fontWeight(.thin)
-                        .foregroundColor(Color(red: 1.00, green: 0.93, blue:0.81))
-                }
-                
-                Text("💧 \(entry.weatherData.humidityToDisplay)")
-                    .font(.subheadline).fontWeight(.thin).foregroundColor(Color(red: 1.00, green: 0.93, blue: 0.81))
-                Text("💨 \(entry.weatherData.pressureToDisplay)") .font(.subheadline).fontWeight(.thin).foregroundColor(Color(red: 1.00, green: 0.93, blue: 0.81))
-                Text("⚡️ \(entry.weatherData.voltageToDisplay)").font(.subheadline).fontWeight(.thin).foregroundColor(Color(red: 1.00, green: 0.93, blue: 0.81))
+                TemperatureView(temp: entry.weatherData.temperatureToDisplay)
+                EntryView(entry: "💧 \(entry.weatherData.humidityToDisplay)")
+                EntryView(entry: "💨 \(entry.weatherData.pressureToDisplay)")
+                EntryView(entry: "⚡️ \(entry.weatherData.voltageToDisplay)")
             }.padding(.bottom)
         }
     }
@@ -43,3 +32,5 @@ struct GrahamWidgetSmall_Previews: PreviewProvider {
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }
+
+

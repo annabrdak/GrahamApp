@@ -47,4 +47,14 @@ struct WeatherModel {
             return "thermometer"
         }
     }
+    
+    var message: String {
+        switch Int(temperatureToDisplay)! {
+        case ..<15:
+            //return K.lowMessages[Int.random(in: 0...(K.lowMessages.count-1))]
+            return K.lowMessages.randomElement()!
+        default:
+            return K.goodMessages.randomElement()!
+        }
+    }
 }
